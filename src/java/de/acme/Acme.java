@@ -1,10 +1,10 @@
 package de.acme;
 
 public class Acme {
-    public int factorial(int n) {
-        if (n <= 1) {
-            return 1;
+    public boolean qualifiesForDiscount(long price) {
+        if (price >= 50) {
+            return true;
         }
-        return n * factorial(n - 1);
+        return false;
     }
 }
