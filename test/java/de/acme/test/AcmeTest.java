@@ -9,20 +9,20 @@ public class AcmeTest {
     Acme a = new Acme();
 
     @Test
-    public void results_greater_than_1_get_turned_into_1() {
-        int result = a.acme(100);
+    public void factorial_with_1_returns_1() {
+        int result = a.factorial(1);
         assertEquals(1, result);
     }
 
     @Test
-    public void results_equal_to_minus_100_get_turned_into_0() {
-        int result = a.acme(-100);
-        assertEquals(0, result);
+    public void factorial_with_0_returns_1() {
+        int result = a.factorial(0);
+        assertEquals(1, result);
     }
 
     @Test
-    public void everything_else_gets_incremented() {
-        int result = a.acme(-1);
-        assertEquals(0, result);
+    public void factorial_with_5_returns_120() {
+        int result = a.factorial(5);
+        assertEquals(120, result);
     }
 }
