@@ -15,7 +15,7 @@ public class AcmeTest {
     }
 
     @Test
-    public void qualifiesForDiscount_returns_false_for_a_big_enough_amount() {
+    public void qualifiesForDiscount_returns_true_for_a_big_enough_amount() {
         boolean qualified = a.qualifiesForDiscount(100);
         assertTrue(qualified);
     }
